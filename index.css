@@ -1,0 +1,45 @@
+body{
+    /* background-image: url(photo2.png); */
+    background-size: 400px 500px;
+    
+    background-repeat:no-repeat;
+    background-color: #c38d9e;
+    
+}
+.firstBlock{
+    height: 600px;
+    width: 600px;
+    background-color: hsla(360, 97%, 63%, 70%);
+    border-radius: 20px;
+    background-size: contain;
+    margin : 0% 50% 0% 65%;
+    
+    
+}
+
+div.imageBlock{
+    background: url(photo2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* border: 1px solid #ccc; */
+    width: auto;
+    height: 600px;
+
+    /* content: url(photo2.png); */    
+}
+
+.contactButton{
+    display: inline-block;
+    text-decoration: none;
+    color:#42b383;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float:left;
+    /* width:180px; */
+}
