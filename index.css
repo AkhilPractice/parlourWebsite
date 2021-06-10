@@ -33,7 +33,7 @@ div.imageBlock{
     text-decoration: none;
     color:#42b383;
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 30px;
     margin-left: 30px;
 }
 
@@ -42,4 +42,21 @@ div.gallery {
     border: 1px solid #ccc;
     float:left;
     /* width:180px; */
+}
+h1{
+    background-color: hsla(360, 0%, 0%, 30%);
+    border-radius: 10px;
+    padding: 0px 5px 0px;
+    
+}
+.contact{
+    background-color: hsla(360, 97%, 63%, 70%);
+    border-radius: 10px;
+    font-size: 30px;
+    color:#ccc
+}
+.contactSpan{
+    
+    color:hsl(172, 51%, 58%);
+    font-size: 20px;
 }
