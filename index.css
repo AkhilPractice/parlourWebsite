@@ -3,29 +3,47 @@ body{
     background-size: 400px 500px;
     
     background-repeat:no-repeat;
-    background-color: #c38d9e;
+    background-color: black;
     
 }
 .firstBlock{
     height: 600px;
-    width: 600px;
+    width :max-content;
+    height: max-content;
     background-color: hsla(360, 97%, 63%, 70%);
     border-radius: 20px;
     background-size: contain;
-    margin : 0% 50% 0% 65%;
-    
-    
+    position: relative;
+        
+}
+.contact{
+    background-color: hsla(360, 97%, 63%, 70%);
+    border-radius: 10px;
+    font-size: 30px;
+    color:#ccc
+
 }
 
 div.imageBlock{
-    background: url(photo2.png);
+    /* background: url(photo2.png); */
+    overflow: hidden;
+    position: relative;
+    /* background-color: black; */
     background-size: contain;
     background-repeat: no-repeat;
     /* border: 1px solid #ccc; */
-    width: auto;
+    width: fit-content;
     height: 600px;
 
     /* content: url(photo2.png); */    
+}
+.bgImg{
+    opacity:.2;
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: autoS;
 }
 
 .contactButton{
@@ -34,27 +52,66 @@ div.imageBlock{
     color:#42b383;
     font-weight: bolder;
     font-size: 30px;
-    margin-left: 30px;
+    margin: 2px 30px;
+    padding:2px;
+    border:1px solid black;
+    border-radius: 4px;
 }
 
-div.gallery {
+.about{
+    background:hsla(350,100%,88%,50%);
+    width:max-content;
+    height:max-content;
+    border-radius: 5px;
+    position: relative;
+    margin:10px;
+    padding:0px 5px 5px 5px;
+}
+
+.gallery{
+    background: hsla(350, 100%, 88%, 50%);
     margin: 5px;
-    border: 1px solid #ccc;
-    float:left;
-    /* width:180px; */
+    width :max-content;
+    height: max-content;
+    position: relative;
+    padding: 5px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* flex-flow: column nowrap; */
+    justify-content: center;
+    align-content:flex-start;
+    align-items:baseline;
+
 }
-h1{
-    background-color: hsla(360, 0%, 0%, 30%);
-    border-radius: 10px;
-    padding: 0px 5px 0px;
+
+.item{
+    background-color: hsla(0, 0%, 100%, 80%);
+    content :initial;
+    margin: 5px;
+    width:100px;
+    height:100px;
+    object-fit: contain;
     
+    
+
 }
-.contact{
-    background-color: hsla(360, 97%, 63%, 70%);
-    border-radius: 10px;
+.big{
     font-size: 30px;
-    color:#ccc
 }
+h1.parlourName{
+    background-color: rgba(255, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 5px;
+    font-family: helvetica;
+    justify-content: center;
+    align-content: center;
+    color:rgb(154, 173, 41);
+        
+}
+
 .contactSpan{
     
     color:hsl(172, 51%, 58%);
