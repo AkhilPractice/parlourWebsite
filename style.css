@@ -67,7 +67,7 @@ body {
 
 .about, .gallery {
   background: rgba(255, 194, 204, 0.856);
-  width: 200px;
+  width: 15em;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -79,7 +79,7 @@ body {
 
 .gallery {
   margin: 5px;
-  width: 200px;
+  width: 15em;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
