@@ -5,17 +5,19 @@ body{
     background-size: 400px 500px;
     
     background-repeat:no-repeat;
-    background-color: black;
+    background-color: rgba(95, 60, 128, 0.61);
     
 }
 .parlourName{
-    background-color: rgba(255, 0, 0, 0.3);
-    border-radius: 10px;
+    background-color: rgba(184, 48, 48, 0.863);
+    border-radius: 2em;
     padding: 5px;
     font-family: helvetica;
     justify-content: center;
     align-content: center;
-    color:rgb(154, 173, 41);
+    color:rgba(211, 224, 31, 0.89);
+    // opacity: 1;
+    
 }
 .firstBlock{
     height: 600px;
@@ -27,24 +29,27 @@ body{
     position: relative;
     display: flex;
     flex-direction: column;
+    margin: 1em;
+    padding: .3em ;
         
 }
 .imageBlock{
     /* background: url(photo2.png); */
     overflow: hidden;
     position: relative;
+    
     /* background-color: black; */
     background-size: contain;
     background-repeat: no-repeat;
     /* border: 1px solid #ccc; */
     width: fit-content;
-    height: fit-content;
+    height: 100vh;
     
 
     /* content: url(photo2.png); */    
 }
 .bgImg{
-    opacity:.2;
+    opacity:.4;
     position:absolute;
     left: 0;
     top: 0;
@@ -53,7 +58,7 @@ body{
 }
 
 .about{
-    background:hsla(350,100%,88%,50%);
+    background:rgba(255, 194, 204, 0.856);
     
     width:$pinkwidth;
     height:max-content;
@@ -64,7 +69,8 @@ body{
 }
 
 .gallery{
-    background: hsla(350, 100%, 88%, 50%);
+    @extend .about;
+    // background: hsla(350, 100%, 88%, 50%);
     margin: 5px;
     width :$pinkwidth;
     height: max-content;
@@ -89,25 +95,31 @@ body{
     height:70px;
     object-fit: contain;
 }
-.parlourName{
-    background-color: rgba(255, 0, 0, 0.3);
-    border-radius: 10px;
-    padding: 5px;
-    font-family: helvetica;
-    justify-content: center;
-    align-content: center;
-    color:rgb(154, 173, 41);
-        
-}
 .contactButton{
     display: inline-block;
-    background-color: pink;
+    
+    background:rgba(255, 194, 204, 0.856);
+
     text-decoration: none;
     color:#42b383;
     font-weight: bolder;
     font-size: 30px;
     margin: 2px 30px;
     padding:4px;
-    border:1px solid black;
-    border-radius: 4px;
+    // border: solid black;
+    border-radius: 10px;
+}
+.number{
+    @extend .contactButton;
+    margin:auto;
+    background: rgba(33, 224, 193, 0.541);
+    // padding: 2em;
+    color:rgb(100, 99, 98);
+  
+    
+}
+.contactPage{
+    width:max-content;
+    border-radius: 2em;
+
 }
